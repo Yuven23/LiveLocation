@@ -1,45 +1,22 @@
 <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Live Location Map</title>
-            <link
-              rel="stylesheet"
-              href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-              integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-              crossorigin=""
-            />
-            <style>
-              #map {
-                height: 100vh;
-                width: 100vw;
-              }
-            </style>
-          </head>
-          <body>
-            <div id="map"></div>
-            <script
-              src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-              integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-              crossorigin=""
-            ></script>
-            <script src="app.js"></script>
-          </body>
-        </html>
-      #map {
-        height: 100%;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <style>
+        #map {
+            width: 100%;
+            height: calc(100vh - 20px); /* Adjust the height as needed */
+            margin: 0;
+            padding: 0;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div id="map"></div>
-    <script src="map.js"></script>
-  </body>
+    <script src="app.js"></script>
+</body>
 </html>
